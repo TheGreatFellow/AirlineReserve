@@ -10,6 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Date;
+import java.util.Random;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
 
@@ -366,8 +367,8 @@ public class addflight extends javax.swing.JInternalFrame {
             }
             else
             {
-                long id = Long.parseLong(rs.getString("MAX(id)").substring(2,rs.getString("MAX(id)").length()));
-                id++;
+                Random rand = new Random(); 
+                int id = rand.nextInt(100);
                  txtflightid.setText("FL" + String.format("%03d", id));
                 
                 

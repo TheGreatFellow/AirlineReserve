@@ -45,6 +45,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
 
@@ -66,7 +67,7 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 277, Short.MAX_VALUE)
         );
 
-        jMenuBar1.setBackground(new java.awt.Color(88, 87, 119));
+        jMenuBar1.setBackground(new java.awt.Color(36, 29, 62));
         jMenuBar1.setForeground(new java.awt.Color(204, 159, 153));
         jMenuBar1.setBorderPainted(false);
 
@@ -119,6 +120,17 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu2.add(jMenuItem3);
+
+        jMenuItem5.setBackground(new java.awt.Color(88, 87, 119));
+        jMenuItem5.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jMenuItem5.setForeground(new java.awt.Color(204, 159, 153));
+        jMenuItem5.setText("Boarding Pass");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem5);
 
         jMenuBar1.add(jMenu2);
 
@@ -188,6 +200,13 @@ public class Main extends javax.swing.JFrame {
         tic.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        BoardingPass bp = new BoardingPass();
+        jDesktopPane1.add(bp);
+        bp.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -233,5 +252,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     // End of variables declaration//GEN-END:variables
 }
