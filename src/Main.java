@@ -1,3 +1,8 @@
+
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -26,7 +31,14 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        ImageIcon icon = new ImageIcon(getClass().getResource("Airplane_back.jpg"));
+        Image img = icon.getImage();
+        jDesktopPane1 = new javax.swing.JDesktopPane(){
+            public void paintComponent(Graphics g){
+                g.drawImage(img, 0, 0, getWidth(),
+                    getHeight(), this);
+            }
+        };
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -35,13 +47,13 @@ public class Main extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(-10, 0));
         setPreferredSize(new java.awt.Dimension(1900, 735));
         setResizable(false);
+
+        jDesktopPane1.setPreferredSize(new java.awt.Dimension(1900, 735));
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -51,16 +63,26 @@ public class Main extends javax.swing.JFrame {
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 278, Short.MAX_VALUE)
+            .addGap(0, 277, Short.MAX_VALUE)
         );
 
+        jMenuBar1.setBackground(new java.awt.Color(88, 87, 119));
+        jMenuBar1.setForeground(new java.awt.Color(204, 159, 153));
+        jMenuBar1.setBorderPainted(false);
+
+        jMenu1.setBackground(new java.awt.Color(88, 87, 119));
+        jMenu1.setForeground(new java.awt.Color(204, 159, 153));
         jMenu1.setText("Customer");
+        jMenu1.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenu1ActionPerformed(evt);
             }
         });
 
+        jMenuItem1.setBackground(new java.awt.Color(88, 87, 119));
+        jMenuItem1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jMenuItem1.setForeground(new java.awt.Color(204, 159, 153));
         jMenuItem1.setText("Add Customer");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +91,9 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem2.setBackground(new java.awt.Color(88, 87, 119));
+        jMenuItem2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jMenuItem2.setForeground(new java.awt.Color(204, 159, 153));
         jMenuItem2.setText("Search Customer");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,8 +104,14 @@ public class Main extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setBackground(new java.awt.Color(88, 87, 119));
+        jMenu2.setForeground(new java.awt.Color(204, 159, 153));
         jMenu2.setText("Tickets");
+        jMenu2.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
 
+        jMenuItem3.setBackground(new java.awt.Color(88, 87, 119));
+        jMenuItem3.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jMenuItem3.setForeground(new java.awt.Color(204, 159, 153));
         jMenuItem3.setText("Book Ticket");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,8 +122,14 @@ public class Main extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
+        jMenu3.setBackground(new java.awt.Color(88, 87, 119));
+        jMenu3.setForeground(new java.awt.Color(204, 159, 153));
         jMenu3.setText("Flight");
+        jMenu3.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
 
+        jMenuItem4.setBackground(new java.awt.Color(88, 87, 119));
+        jMenuItem4.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jMenuItem4.setForeground(new java.awt.Color(204, 159, 153));
         jMenuItem4.setText("Flight Info");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,24 +140,17 @@ public class Main extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setText("User");
-
-        jMenuItem5.setText("UserCreation");
-        jMenu4.add(jMenuItem5);
-
-        jMenuBar1.add(jMenu4);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
         );
 
         pack();
@@ -198,12 +228,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
     // End of variables declaration//GEN-END:variables
 }

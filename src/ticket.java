@@ -13,6 +13,7 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.plaf.basic.BasicInternalFrameUI;
 import javax.swing.table.DefaultTableModel;
 
 /*
@@ -32,6 +33,12 @@ public class ticket extends javax.swing.JInternalFrame {
      */
     public ticket() {
         initComponents();
+        this.setBorder(null);
+        BasicInternalFrameUI bi = (BasicInternalFrameUI)this.getUI();
+        bi.setNorthPane(null);
+        bi.setSouthPane(null);
+        bi.setEastPane(null);
+        bi.setWestPane(null);
         autoID();
     }
 
@@ -423,7 +430,7 @@ public class ticket extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        pack();
+        setBounds(160, 12, 1025, 650);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
