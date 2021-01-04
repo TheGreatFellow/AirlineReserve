@@ -60,7 +60,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="9f" red="cc" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Search Customer"/>
+                <Property name="text" type="java.lang.String" value="Update Information"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
@@ -143,7 +143,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="9f" red="cc" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Flight Info"/>
+                <Property name="text" type="java.lang.String" value="Add Flight"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
