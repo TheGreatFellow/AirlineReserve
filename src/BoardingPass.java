@@ -335,7 +335,7 @@ public class BoardingPass extends javax.swing.JInternalFrame {
         jSeparator24.setPreferredSize(new java.awt.Dimension(0, 1));
         getContentPane().add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 57, 3));
 
-        setBounds(50, 140, 1272, 312);
+        setBounds(200, 140, 990, 312);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed

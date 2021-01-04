@@ -10,7 +10,9 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="9f" red="cc" type="rgb"/>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value="AirlineREserve"/>
         <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="name" type="java.lang.String" value="Airline Reserve" noResource="true"/>
       </Properties>
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">

@@ -69,7 +69,9 @@ public class Main extends javax.swing.JFrame {
 
         jMenuBar1.setBackground(new java.awt.Color(36, 29, 62));
         jMenuBar1.setForeground(new java.awt.Color(204, 159, 153));
+        jMenuBar1.setToolTipText("AirlineREserve");
         jMenuBar1.setBorderPainted(false);
+        jMenuBar1.setName("Airline Reserve"); // NOI18N
 
         jMenu1.setBackground(new java.awt.Color(88, 87, 119));
         jMenu1.setForeground(new java.awt.Color(204, 159, 153));
