@@ -1,8 +1,24 @@
 # AirlineReserve
 
-A Java App using Swing for UI and MySQL for the database.
+A Java app with lovely User Interface made to book flights with ease of access. </br>
+This is made for my 3rd Semester Java Project.
+
+## Introduction
+
+The main aim of this project is to provide a convenient and hassle-free
+experience while booking a flight. Some features that differs our project
+from other Flight Booking projects are:</br>
+● Editing any passenger information later, in case of a mistake</br>
+● Cancellation of ticket</br>
+● Discounts based on age(For children as well as elderly)</br>
+
+## Tech Stack Used 
+
+Java(Swing) : Most of the UI and the backend is made up of Java </br>
+MySQL       : All the data is stored in MySQL database
 
 ## Home Screen
+
 ![](https://github.com/TheGreatFellow/AirlineReserve/blob/master/Samples/home_screen.png?raw=true)
 
 ## Customer Details
